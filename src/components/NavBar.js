@@ -1,13 +1,14 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import play_time from "../assets/play_time.png";
+import styles from "../styles/NavBar.module.css";
 
 const NavBar = () => {
   return (
-    <Navbar expand="md" fixed="top">
+    <Navbar className={styles.NavBar} expand="md" fixed="top">
       <Container>
         <Navbar.Brand>
-          <img src={play_time} alt="logo" height="250" />
+          <img src={play_time} alt="logo" height="200" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
