@@ -29,12 +29,17 @@ function SignInForm() {
   const history = useHistory();
   const handleSubmit = async (event) => {
     event.preventDefault();
+    if (!username || !password) {
+      setErrors({ non_field_errors: ["Username and password are required."] });
+      return;
+    }
     try {
       const { data } = await axios.post("/dj-rest-auth/login/", signInData);
       setCurrentUser(data.user);
       history.push("/");
     } catch (err) {
-      setErrors(err.response?.data);
+      console.error("Error details:", err);
+      setErrors(err.response?.data || { non_field_errors: ["An error occurred"] });;
     }
   };
 
@@ -60,6 +65,7 @@ function SignInForm() {
                 className={styles.Input}
                 value={username}
                 onChange={handleChange}
+                autoComplete="current-password"
               />
             </Form.Group>
             {errors.username?.map((message, idx) => (
@@ -77,6 +83,7 @@ function SignInForm() {
                 className={styles.Input}
                 value={password}
                 onChange={handleChange}
+                autoComplete="current-password"
               />
             </Form.Group>
             {errors.password?.map((message, idx) => (
