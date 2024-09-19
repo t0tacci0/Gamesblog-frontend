@@ -4,6 +4,8 @@ import { axiosReq } from "../../api/axiosDefaults";
 import appStyles from "../../App.module.css";
 import Asset from "../../components/Asset";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
+import Profile from "./Profile";
+
 const PopularProfiles = ({ mobile }) => {
   const [profileData, setProfileData] = useState({
     // we will use the pageProfile later!
@@ -12,6 +14,7 @@ const PopularProfiles = ({ mobile }) => {
   });
   const { popularProfiles } = profileData;
   const currentUser = useCurrentUser();
+
   useEffect(() => {
     const handleMount = async () => {
       try {
@@ -26,8 +29,10 @@ const PopularProfiles = ({ mobile }) => {
         console.log(err);
       }
     };
+
     handleMount();
   }, [currentUser]);
+
   return (
     <Container
       className={`${appStyles.Content} ${
@@ -40,12 +45,12 @@ const PopularProfiles = ({ mobile }) => {
           {mobile ? (
             <div className="d-flex justify-content-around">
               {popularProfiles.results.slice(0, 4).map((profile) => (
-                <p key={profile.id}>{profile.owner}</p>
+                <Profile key={profile.id} profile={profile} mobile />
               ))}
             </div>
           ) : (
             popularProfiles.results.map((profile) => (
-              <p key={profile.id}>{profile.owner}</p>
+              <Profile key={profile.id} profile={profile} />
             ))
           )}
         </>
@@ -55,4 +60,5 @@ const PopularProfiles = ({ mobile }) => {
     </Container>
   );
 };
+
 export default PopularProfiles;
