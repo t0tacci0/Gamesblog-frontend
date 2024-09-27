@@ -119,7 +119,7 @@ function SignInForm() {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero.jpg"}
+          src={"https://res.cloudinary.com/dfjqihdnk/image/upload/v1727403424/SignIn_image_br4pmz.jpg"}
         />
       </Col>
     </Row>
