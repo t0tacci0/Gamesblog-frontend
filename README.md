@@ -45,6 +45,37 @@ GamesBlog want to create a community of people with common interest and with the
   - [Code](#code)
   - [Acknowledgments](#acknowledgments)
 
+## Deployment
+
+### Heroku
+This site is deployed using Heroku. To deploy it from its GitHub repository to Heroku, I took the following steps:
+
+1. Log in (or sign up) to Heroku
+2. Click on the _New_ button and select _Create new app_
+3. Give it a unique name and choose the region _Europe_
+4. Click the *Deploy* tab, go to the _Deployment method_ section, select _GitHub_ and confirm this selection by clicking on the _Connect to Github_ button
+5. Search for the repository name on github _GamesBlog-frontend_ and click the _Connect_ button
+6. Inside the src folder add an api folder and create an axiosDefault.jsx
+7. Add the link to the deployed version of the api as baseURL
+8. Create a _Procfile_ in the root directory and add *web: npm run start*
+9. In Heroku enable the automatic deploy or manually deploy the code from the main branch
+
+To see the [view of the live site](https://gamesblog-front-34620d1947f3.herokuapp.com/) click on the _Open app_ button in the top right corner.
+
+### Forking this GitHub repository
+1.  Log in to GitHub.
+2.  Navigate to the repository for this project by selecting [*Gamesblog*](https://github.com/t0tacci0/gamesblog-frontend)
+3. Click at the top of the repository on the **Fork** button on the right side
+
+### Clone this repository
+1. Log in to GitHub.
+2. Navigate to the repository for this project by selecting [*Gamesblog*](https://github.com/t0tacci0/gamesblog-frontend)
+3. In the top-right corner, click on the green *Code* button
+4. Copy the HTTPS URL in the tab *Local*
+5. Go to the code editor of your choice and open the terminal
+5. Type `git clone` and paste the URL you copied into your terminal
+6. Press the enter key
+
 ## Credits
 
 ### Code
