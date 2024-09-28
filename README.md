@@ -42,7 +42,31 @@ GamesBlog want to create a community of people with common interest and with the
   - [Forking this GitHub repository](#forking-this-github-repository)
   - [Clone this repository](#clone-this-repository)
 - [Credits](#credits)
-  - [Content](#content)
   - [Code](#code)
-  - [ReadMe](#readme)
   - [Acknowledgments](#acknowledgments)
+
+## Credits
+
+### Code
+
+- The initial setup and overall architecture of this project were guided by the Code Institute's Django Rest Framework walkthrough project. The core elements of the Profile, Follower, Like, Comment, along with their respective serializers, filtering capabilities, and tests, were derived from the walkthrough project and subsequently tailored to meet the unique requirements of this project.
+
+- The following websites were used as a source of knowledge: <br>
+  - [Google](www.google.com)
+  - [mdn](https://developer.mozilla.org/en-US/)
+  - [W3C](https://www.w3.org/)
+  - [W3schools](https://www.w3schools.com/)
+  - [DevDocs](https://devdocs.io/)
+  - [Stack Overflow](https://stackoverflow.com/)
+  - [reddit](https://www.reddit.com/)
+  - [forum djangoproject](https://forum.djangoproject.com/)
+  - [Django](https://www.djangoproject.com/), [Django Rest Framework]((https://www.django-rest-framework.org/)), [Cloudinary](https://cloudinary.com/documentation)
+  - Slack Community
+
+### Acknowledgements
+
+- I would like to thank my mentor Mo Shami for his tips and assistance for the creation of this project.  
+- Furthermore, I would like to give a shoutout to the wonderful tutor team who helped me numerous times when I was stuck and struggling to achieve the results I was aiming for. Your support and guidance have been amazing. Thank you!
+- A big thank you for Slack community.
+
+**This is for educational use.**  
