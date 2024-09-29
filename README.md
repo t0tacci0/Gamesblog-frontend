@@ -224,6 +224,45 @@ I created this colour palette with [coloors](https://coolors.co/).<br>
 
 All information about the structure can be found in the README of the API [here](https://github.com/t0tacci0/Gamesblog-backend)
 
+## Reusable Components
+
+Reusable components are a core principle in React. List of reusbale components in this project:<br>
+
+**Avatar.js**<br>
+The Avatar component was utilized across various parts of the application to ensure a consistent and user-friendly display of profile images and related text.The component Const Avatar is reused in: NavBar.js, Comment.js, CommentCreateForm.js, Post.js and Profile.js.
+
+**Assets.js**<br>
+ This component is designed to handle the display of a loading spinner, an image, or a message, depending on the props passed to it. <br>
+It was utilized in various parts of the application. Here's how it was employed across different components:
+"Not Found" component To display a placeholder image that provides a visual cue for the 404 error page,PostCreateForm.js, PostPage.js, PostsPage.js, PopularProfiles.js, ProfilePage.js.
+
+**NavBar.js**<br>
+The Navbar component played a central role in the application's navigation, offering a consistent and intuitive user experience across the site. The component const NavBar is considered a reusable component and is reused in: App.js.<br>
+
+**NotFound.js**<br>
+The NotFound component is a specialized component designed to handle 404 errors, providing users with a clear indication that the page they are trying to access does not exist.The const NotFound was also given a source of NoResults and this has been reused in: PostsPage.js and ProfilePage.js.
+
+**MoreDropdown.js**<br>
+This component is designed to show a dropdown menu. 
+The component const MoreDropdown is considered a reusable component and is reused in: Comment.js, Post.js and ProfilePage.js.
+
+**Post.js**<br>
+This component is showing all the different posts that are created.
+The component const Post is considered a reusable component and is reused in: PostPage.js and PostsPage.js.
+
+**PostCreateForm.js**<br>
+This component is designed to create the form where user can add new posts to the website. 
+The component function PostCreateForm is considered a reusable component and is reused in: App.js.
+
+**PopularProfiles.js**<br>
+This component is designed to display a list of popular profiles, on both small mobile screens and larger computer screens.
+The component const PopularProfiles is considered a reusable component and is reused in: PostPage.js, PostsPage.js and ProfilePage.js.
+
+**ProfilePage.js**<br>
+This component displays a user's profile information, including profile image, bio, follower counts, and their posts.
+The function ProfilePage is considered a reusable component and is reused in: App.js.
+
+
 ## Technologies Used
 
 ### Languages:
