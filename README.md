@@ -9,7 +9,7 @@ GamesBlog is an application for all the people who love playing videogames and w
 GamesBlog want to create a community of people with common interest and with the with the possibility to follow and unfollow people with same passion,idea and why not interests.Once logged in with a specific account created,users can modify their profile with password and name included. 
 
 
-![Screenshot of the preview of application]()<br>
+![Screenshot of the preview of application](src/assets/i_am_responsive.png)<br>
 
 ## Table of contents
 
@@ -156,9 +156,9 @@ This epic is about the front end application where the users can use the navigat
 <br>
 
 Wireframe for home page for logged-out user: <br>
-![]()<br>
+![](src/assets/documentation/loggedout_home.png)<br>
 Wireframes for home page for logged-in user:<br>
-![]()<br>
+![](src/assets/documentation/loggedin_home.png)<br>
 
 </details>
 
@@ -167,18 +167,17 @@ Wireframes for home page for logged-in user:<br>
 <br>
 <br>
 
-![]()<br>
-![]()<br>
+![](src/assets/documentation/signupform.png)<br>
+![](src/assets/documentation/signinform.png)<br>
 
 </details>
 
 <details>
-<summary> Create a post </summary>
+<summary> Contact page </summary>
 <br>
 <br>
 
-![]()<br>
-![]()<br>
+![](src/assets/documentation/contactform.png)<br>
 
 </details>
 
@@ -187,8 +186,7 @@ Wireframes for home page for logged-in user:<br>
 <br>
 <br>
 
-![]()<br>
-![]()<br>
+![](src/assets/documentation/profile.png)<br>
 
 </details>
 
