@@ -132,6 +132,99 @@ This epic is about the front end application where the users can use the navigat
 * As a logged in user I can like a post that i am interested or share same ideas.
 * As a logged in user I can view the posts I have marked as a favourite.
 
+**Developer**
+
+* As a developer, I require a repository on GitHub for the front-end part of the project so that I have full control over the project versions.
+* As a developer, I require a repository on Github for the api of the project so that I have full control over project versions.
+* As a developer, I want to add a working kanban board to my repository so that I can track the tasks involved in creating the project.
+* As a developer, I can automatically create a user profile when a new user signs up for my application so that the user has a profile ready for them upon registration.
+* As a developer, I want to implement python test procedures so that I can assess functionality, usability, responsiveness, and data management throughout the web application.
+* As a developer, I want to implement JavaScript test procedures so that I can assess functionality, usability, responsiveness, and data management throughout the web application.
+* As a developer, I want to implement manual test cases so that I can assess functionality, usability, responsiveness, and data management throughout the web application.
+* As a developer, I need to verify that my css files pass the W3C validation so that the code is executed correctly.
+* As a developer, I need to verify that my JavaScript files pass the jshint validation so that the code is executed correctly.
+* As a developer, I need to verify that my python files pass the pep8 validation so that the code is executed correctly.
+* As an admin, I want to access the site's administrative features so that I have access to the admin panel.
+
+## Design
+
+### Wireframes
+
+<details>
+<summary> Home page </summary>
+<br>
+<br>
+
+Wireframe for home page for logged-out user: <br>
+![]()<br>
+Wireframes for home page for logged-in user:<br>
+![]()<br>
+
+</details>
+
+<details>
+<summary> Sign Up & Sign In </summary>
+<br>
+<br>
+
+![]()<br>
+![]()<br>
+
+</details>
+
+<details>
+<summary> Create a post </summary>
+<br>
+<br>
+
+![]()<br>
+![]()<br>
+
+</details>
+
+<details>
+<summary> Profile Page </summary>
+<br>
+<br>
+
+![]()<br>
+![]()<br>
+
+</details>
+
+### Imagery
+ 
+The logo for the project has been designed by me with [Canva](https://www.canva.com/).
+
+#### Logo
+
+![Logo for GamesBlog](src/assets/play_time.png)<br>
+
+
+#### Favicon
+
+The favicon was created with [Favicon.io](https://favicon.io/favicon-generator/) by using the logo.<br>
+
+  ![Favicon for GamesBlog](src/assets/favicon_screen.png)
+
+#### Colour Scheme:
+  
+
+<details>
+<summary> Click here to see the colour palette </summary>
+<br>
+
+I created this colour palette with [coloors](https://coolors.co/).<br>
+![Colour palette ](src/assets/colour_palette.png)<br>
+
+</details>
+
+### Typography
+
+[DM Sans](https://fonts.google.com/specimen/DM+Sans?query=dm) Was used as font for the project.
+## Structure 
+
+All information about the structure can be found in the README of the API [here](https://github.com/t0tacci0/Gamesblog-backend)
 
 ## Technologies Used
 
