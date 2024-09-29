@@ -14,8 +14,8 @@ GamesBlog want to create a community of people with common interest and with the
 ## Table of contents
 
 - [User Experience](#user-experience)
-  - [Milestones](#milestones)
-  - [Epics and User stories](#epics-and-user-stories)
+  - [Epics](#epics)
+  - [User stories](#user-stories)
 - [Design](#design)
   - [Wireframes](#wireframes)
   - [Logo](#logo)
@@ -46,6 +46,92 @@ GamesBlog want to create a community of people with common interest and with the
 - [Credits](#credits)
   - [Code](#code)
   - [Acknowledgments](#acknowledgments)
+
+### Epics
+
+
+**Posts**
+
+This epic is about the front end application where the users can create, read, update and delete their own posts. 
+
+**Comments**
+
+This epic is about the front end application where the users can create, read, update and delete their own comments.
+
+**Profiles**
+
+This epic is about the front end application where the users can create, read, update and delete their own profiles.  
+
+**Likes**
+
+This epic is about the front end application where the users can favourite certain posts they like and find them under the likes category when they are logged in.
+
+**Home**
+
+This epic is about the front end application for the home page where the users can see the most recent created posts, the most followed profiles and so on.
+
+**Authentication** 
+
+This epic is about the front end application where the users can choose to sign up, sign in and see if they are logged in or not.
+
+**Navigation menu**
+
+This epic is about the front end application where the users can use the navigation menu at the top of the page to get to the different pages.
+
+### User Stories
+
+**Home**
+
+* As a user I can keep scrolling through the images on the site withouth changing page.
+* As a user I can see a list of the most followed and popular profiles that i can be interested.
+* As a user, I can search for posts and user with keywords.
+* As a logged in user I can follow and unfollow other users so that I can see and remove posts by specific users.
+* As a user I can navigate through pages quickly.
+
+**Authentication** 
+
+* As a user I can sign in to the app so that I can access functionality for logged in users.
+* As a user I can tell if I am logged in or not.
+* As a user I can maintain my logged-in status until I choose to log out so that my user experience is not compromised.
+* As a user I can create a new account so that I can access all the features for signed up users.
+
+**Navigation menu**
+
+* As a user I can view a navbar from every page so that I can navigate easily between pages.
+* As a logged out user I can see sign in and sign up options so that I can sign in/sign up again.
+
+**Posts**
+
+* As a logged in user I can create posts and share with community.
+* As a user I can view all the most recent posts, ordered by list view.
+* As a user I can view the details of a single post and to interact with it.
+* As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created.
+* As an owner of a post I can delete my post.
+* As a user I can view all the posts by a specific user.
+* As a logged in user I can view content filtered by users I follow so that I can keep up to date.
+
+**Comments**
+
+* As a user I can view the posts page so that I can read the comments.
+* As an owner of a comment I can delete my comment.
+* As a user I can read comments on posts so that I can read what other users think about.
+* As a logged in user I can add comments to a post.
+* As a user I can see how long ago a comment was made.
+* As an owner of a comment I can edit my comment so that I can fix or update my existing comment with the text.
+
+**Profiles**
+
+* As a user I can view other users profiles so that I can see their posts.
+* As a logged in user I can update my username and password so that I can change my display name and use stronger passwords.
+* As a logged in user I can edit my profile so that I can change my profile picture and bio description.
+* As a user I can view statistics about a specific user: bio, number of posts, follows and users followed.
+* As a user I can view user's avatars.
+
+**Likes**
+
+* As a logged in user I can like a post that i am interested or share same ideas.
+* As a logged in user I can view the posts I have marked as a favourite.
+
 
 ## Technologies Used
 
