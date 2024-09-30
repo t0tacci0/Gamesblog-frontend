@@ -262,6 +262,10 @@ The component const PopularProfiles is considered a reusable component and is re
 This component displays a user's profile information, including profile image, bio, follower counts, and their posts.
 The function ProfilePage is considered a reusable component and is reused in: App.js.
 
+## Bugs
+
+I got for twice the same bug i described in the backend readme file.As i described i had to reset and create another database with the
+help of tutor team.Unfortunately due to lack of time for the project i couldn't fix some bugs,but the project works good.
 
 ## Technologies Used
 
@@ -292,6 +296,67 @@ The function ProfilePage is considered a reusable component and is reused in: Ap
 ### Libraries and modules:
 - [Axios](https://axios-http.com/docs/intro)
 - [React Infinite Scroll Component](https://www.npmjs.com/package/react-infinite-scroll-component)
+
+## Testing
+
+The app was tested regularly and deployed early to Heroku to make sure both local and remote worked the same.
+
+### Validator Testing
+
+<details>
+<summary> HTML Validation</summary>
+<br>
+
+I passed my deployed html files through the [HTML Validator](https://validator.w3.org/nu/) and no errors were found for all pages:<br>
+     
+![HTML result homepage](src/assets/documentation/html_val.png)
+
+  
+</details>
+
+<details>
+<summary> CSS Validation</summary>
+<br>
+
+I passed my deployed css file through the [CSS Validator](https://jigsaw.w3.org/css-validator/) and no errors were found.<br>
+     
+![CSS result](src/assets/documentation/css_val.png)
+  
+</details>
+
+<details>
+<summary> JavaScript Validation - ESLint</summary>
+<br>
+
+To validate the Javascript code in my code editor I used [ESLint](https://eslint.org/). Several minor issues were immediately corrected and no errors or warnings were shown. 
+<br>
+  
+</details>
+
+### Lighthouse Test
+I used Google Lighthouse in Chrome Developer Tools to test the pages for Performance, Accessibility, Best Practices and SEO for mobile view. The third part, especially cookies, downgraded my score. Overall, this is something I would like to improve in the future with more time. 
+
+Home page: <br>
+![Lighthouse report for home page on desktop screens](src/assets/documentation/home_desktop.png)<br>
+Home page: <br>
+![Lighthouse report for home page on mobile screens](src/assets/documentation/home_mobile.png)<br>
+Profile Page: <br>
+![Lighthouse report for Profile Page on desktop screens](src/assets/documentation/profile_desktop.png)<br>
+Profile Page: <br>
+![Lighthouse report for Profile Page on mobile screens](src/assets/documentation/profile_mobile.png)<br>
+
+
+
+### Browser Compatibility
+  The tests were conducted using the following browser:
+
+- Google Chrome Version 128.0.6613.113 <br>
+Tests were also carried out for the following browsers using [browserling](https://www.browserling.com/) <br>
+- Firefox 128
+- Opera 112
+- Brave 1.68
+- Vivaldi 6.8
+- Safari 17.4.1 
 
 ## Deployment
 
