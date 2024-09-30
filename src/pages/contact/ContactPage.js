@@ -20,16 +20,16 @@ function ContactPage() {
     contact_topic: "",
     contact_message: "",
   });
-  const { name, email, subject, message, } = contactUsData;
+  const { contact_name, contact_email, contact_topic, contact_message, } = contactUsData;
  
   const history = useHistory();
   const handleSubmit = async (event) => {
     event.preventDefault();
     const contactFormData = new FormData();
-    contactFormData.append("name", name);
-    contactFormData.append("email", email);
-    contactFormData.append("subject", subject);
-    contactFormData.append("message", message);
+    contactFormData.append("contact_name", contact_name);
+    contactFormData.append("contact_email", contact_email);
+    contactFormData.append("contact_topic", contact_topic);
+    contactFormData.append("contact_message", contact_message);
     try {
       await axiosReq.post("/contact/", contactFormData);
       history.goBack();
@@ -58,9 +58,9 @@ function ContactPage() {
               <Form.Control
                 type="text"
                 placeholder="Name"
-                name="name"
+                name="contact_name"
                 className={styles.Input}
-                value={name}
+                value={contact_name}
                 onChange={handleChange}
               />
             </Form.Group>
@@ -75,9 +75,9 @@ function ContactPage() {
               <Form.Control
                 type="email"
                 placeholder="Email"
-                name="email"
+                name="contact_email"
                 className={styles.Input}
-                value={email}
+                value={contact_email}
                 onChange={handleChange}
               />
             </Form.Group>
@@ -91,9 +91,9 @@ function ContactPage() {
               <Form.Control
                 type="text"
                 placeholder="Subject"
-                name="subject"
+                name="contact_topic"
                 className={styles.Input}
-                value={subject}
+                value={contact_topic}
                 onChange={handleChange}
               />
             </Form.Group>
@@ -108,9 +108,9 @@ function ContactPage() {
                 as="textarea"
                 rows={5}
                 placeholder="Message"
-                name="message"
+                name="contact_message"
                 className={styles.Input}
-                value={message}
+                value={contact_message}
                 onChange={handleChange}
         
               />
