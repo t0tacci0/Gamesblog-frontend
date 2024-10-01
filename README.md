@@ -35,7 +35,6 @@ GamesBlog want to create a community of people with common interest and with the
   - [Lighthouse Test](#lighthouse-test)
   - [Manual testing](#manual-testing)
   - [Browser Compatibility](#browser-compatibility)
-  - [Automated Testing](#automated-testing)
 - [Deployment](#deployment)
   - [Heroku](#heroku)
   - [Run locally](#run-locally)
@@ -46,6 +45,12 @@ GamesBlog want to create a community of people with common interest and with the
 - [Credits](#credits)
   - [Code](#code)
   - [Acknowledgments](#acknowledgments)
+
+## User Experience
+
+I used an Agile methodology approach to plan this project. This was implemented through the GitHub Project board.\
+During the development of the webpage i only focused on the ones i really needed.
+The Kanban board can be seen [here](https://github.com/users/t0tacci0/projects/6/views/1).
 
 ### Epics
 
@@ -325,10 +330,12 @@ I passed my deployed css file through the [CSS Validator](https://jigsaw.w3.org/
 </details>
 
 <details>
-<summary> JavaScript Validation - ESLint</summary>
+<summary> JavaScript Validation</summary>
 <br>
 
-To validate the Javascript code in my code editor I used [ESLint](https://eslint.org/). Several minor issues were immediately corrected and no errors or warnings were shown. 
+I Checked the contactPage that i created for the project with no errors.
+
+![JSHint](src/assets/documentation/JSHint_val.png)
 <br>
   
 </details>
@@ -345,7 +352,55 @@ Profile Page: <br>
 Profile Page: <br>
 ![Lighthouse report for Profile Page on mobile screens](src/assets/documentation/profile_mobile.png)<br>
 
+### Manual Testing
 
+<details>
+<summary> Click here to see the testing table for features</summary>
+<br>
+
+| **Test** | **Test Description** | **Expected Outcome** | **Result** | 
+|:---|:---|:---|:---|
+| Header - Logo | Click on the logo to return to main page | Clicking on the logo on each page will return you to the main page | Pass |
+| Header - Navbar toggle in tablet/mobile view | Click in tablet/mobile view on the burger icon to open the navigation | When the burger icon in mobile or tablet view is clicked, the navigation should open | Pass |
+| Header - Close Navbar toggle in tablet/mobile view | Click outside of the toggeld navbar in tablet/mobile view | When clicking outside of the toggled navbar, the navbar should dissapear and the burger icon should be shown | Pass |
+| Header - Navbar toggle inside the menu in tablet/mobile view | Click in tablet/mobile view on the burger icon to open the navigation and then click on Profile | When the user clicks Profile in mobile or tablet view, the dropdown should open | Pass |
+| Header - Navigation link | Click on a term in the navigation bar to go to the corresponding page | Clicking on a page at the navigation bar should take the user to the corresponding page | Pass |
+| Header - Navigation link (mobile view) | Click in the mobile view on a term in the navigation bar to go to the corresponding page and close the toggled burger menu | Clicking on a page at the navigation bar should take the user to the corresponding page and close the toggled burger menu | Pass |
+| Header - Navigation links and items | Depending on whether the user is logged in or not, the navigation elements should adapt accordingly | After logging in, the navigation menu should adjust accordingly. | Pass |
+| Favicon & Title | When opening the page or navigating within it, the favicon and the title should be visible. | After opening the page or navigating within it, tha favicon should be visible. | Pass |
+| Sign Up | Fill out each field and click on the sign-me-up button. | After filling out every form field with validate input, and clicking the 'Sign Up' button, the user should be redirected to the verify email page and receive an email to verify the mail address | Pass |
+| Sign Up - error message | Fill the username field with a username that is already existing or a pwassord that didn't match, and click on the sign-me-up button. | After entering a username that already exists or a password that doesn't match, and clicking the "sign me up" button, an error message should be displayed. | Pass |
+| Sign In In | Log in with username and password | Clicking on the 'Log In' button after providing the correct username and password, the user should be redirected to the main page, and the navigation menu should change. In addition, a message that a successful login has taken place should be displayed. | Pass |
+| Sign Out out | Click 'Sign out' in the navigation bar | After clicking on Log out, the user is logged out, redirected to the log in page, the navigation bar for logged out users is shown, and a message is displayed. | Pass |
+| Redirect Logged In - Signup/Signin | Manually enter the URL for the Signup or Login page in the browser while logged in. | The user is redirected to the homepage, and the Signup/SignIn page is not accessible. | Pass |
+| Redirect Logged out - Profile Page | Manually enter the URL for the user profile page in the browser while logged out. | The user is redirected to the homepage, and the profile page is not accessible. | Pass |
+| User Profile Access - Logged In | Access the profile page via the navigation bar, "Most Active Profiles" section, participants section, or comments section by clicking on the username or profile picture. | The user should be able to access their profile page. | Pass |
+| Profile Picture Display | Access the profile page where the user has not uploaded a picture. | A placeholder image featuring the Person avatar should be displayed. | Pass |
+| Username Display | Access the profile page. | The username displayed should be the one created during the signup process. | Pass |
+| Follow/Unfollow Button Visibility | Access the profile page of a user who is not the currently logged-in user. | The follow/unfollow button should be visible. Access the profile page of the logged-in user. | Pass |
+| Followers and Following Counts | Access the profile page. | The number of followers and the number of people the user is following should be displayed accurately. | Pass |
+| "Bio" Description | Access the profile page where the user has provided a description. | The description should be displayed if it is filled out. If not, the field should be show empty space. | Pass |
+| Infinite Scroll | Access a profile page with more than 10 Profiles and scroll down. | Additional Profiles should load as the user scrolls, and a spinner should be briefly displayed during loading. | Pass |
+| Edit Profile Button - Own Profile | Visit own profile page. | Three dots outlined in green should appear on the right side. Clicking these dots should reveal a dropdown menu with options to edit profile, username, or password. | Pass |
+| Redirect to Edit Profile Page | Click on 'Edit Profile' from the dropdown menu. | The user should be redirected to the edit profile page with existing data pre-filled in the form. | Pass |
+| Confirm Profile Changes | On the edit profile page, click 'Confirm Changes'. | The user should be redirected back to the profile overview page, and a success message should be displayed for 3 seconds. | Pass |
+| Profile Editing - Success Message and Redirect | Save all changes to the profile, and click the save button. | A success message should be displayed, and the user should be redirected to the profile page. | Pass |
+| Comment on a Post - log in required | Navigate to the detailed view of a Post and add a comment by typing in the comment section and clicking the "add comment" button. | The comment should be added, displayed in the comment section, and the comment count should increase by one. | Pass |
+| Follow another User - log in required | Click on the Follow button in the "Most Followed Profiles" section. | The user should be marked as following, and the follower count on the followed user’s profile should increase by one. | Pass |
+| Unfollow a User - log in required | Click on the Unfollow button in the "Most Followed Profiles" section. | The user should be marked as unfollowing, and the follower count on the unfollowed user’s profile should decrease by one. | Pass |
+| Edit comment - log in and owner-status required | Click the three dots next to the comment you own and select "Edit". | The comment form should reopen with the existing content. The user should be able to update the comment by clicking "Save" or cancel the edit by clicking "Cancel". The updated comment should be displayed if saved. | Pass |
+| Delete comment - log in and owner-status required | Click the three dots next to the comment you own and select "Delete". Confirm the deletion in the modal. | The comment should be removed from the list, and the comment count should decrease accordingly. | Pass |
+| Redirect - logged-in user tries to access signup page | As a logged-in user, try to access the Signup page by typing the URL directly in the browser. | The user should be automatically redirected to the homepage. | Pass |
+| Redirect - logged-in user tries to access login page | As a logged-in user, try to access the Login page by typing the URL directly in the browser. | The user should be automatically redirected to the homepage. | Pass |
+| Redirect - logged-out user tries to access profile page | As a logged-out user, try to access a user profile page by typing the URL directly in the browser. | The user should be automatically redirected to the homepage. | Pass |
+| Search bar | Write something in the search bar to see if it takes in the correspective post | The user should be taken to the correct post when using the searchbar and if no posts are found the "no results found" page displays. | Pass |
+| Contact Page correct insert| Make sure that the contact form is working on the contact page. | The user should be taken to the contact page and be able to fill in the contact form and then press the Send message button to send the message. | Pass |
+| Contact Page wrong email| Make sure that the contact form is not working on the contact page with wrong email field details. | When  click on the Contact Us link in the navigation menu fill wrong email information and pressed the Send message button.The message was displaying an error with "Enter a valid email address". | Pass |
+| Feed Page | Make sure the feed page is working and only shows all posts of the profiles you have choosen to follow. | The user should be taken to the feed page when clicked on the feed link in the navigation menu. The user should only see posts from users the have choosen to follow. | Pass |
+| Add Post | Make sure that the user can add their own post when logged in to the website, and that the post is showing on the posts page. | The user should be able to see a add post link in the navigation menu when logged in. The user should be able to create a new post that is added to the posts page. | Pass |
+| Edit/Delete Post | Make sure that the user can edit/delete their own post when logged in to the website. | The user should be able to edit and delete their own posts with dropdown icon. | Pass |
+
+</details>
 
 ### Browser Compatibility
   The tests were conducted using the following browser:
